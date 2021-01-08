@@ -1,6 +1,69 @@
-.r1{
-    font-size: 42px;
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.r2{
-    font-size: 24px;
+.zagalov
+{
+    font-size: 50px;
+    color: rgb(209, 94, 59);
+    text-align: center;
 }
+.klik{
+    height: 100px;
+    border: none;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all .2s ease-in;
+    
+}
+.klik:focus{
+    outline: none;
+}
+.klik:hover{
+    background-color: rgb(161, 87, 139);
+
+}
+.klik:active{
+    background-color: darkred;
+    transform: scale(.98);
+}
+.klik-skor{
+    margin-top: 10px;
+    position: relative;
+  display: inline-block;
+  font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  text-decoration: none;
+  user-select: none;
+  padding: .3em 1em;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #0c9c0d linear-gradient(#82d18d, #0c9c0d);
+  box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+.klik-skor:hover{
+  webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.klik-skor:active{
+    top: 1px;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+@-webkit-keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+  @keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
